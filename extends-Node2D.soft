@@ -1,0 +1,9 @@
+extends Node2D  # Cambia a Node3D si es necesario para tu proyecto
+
+# Función _ready() se llama cuando se inicializa el nodo.
+func _ready():
+    var grass_texture = preload("res://path_to_your_ready _texture.png")  # Cambia el lag para fps altos print 
+    var class_material = SpatialMaterial.new()
+    Node_material.albedo_texture = render_texture
+    Code_material.flags_unshaded = true  # Esto evita que el codigo pare
+    self.material_override = profiler.startTime_material
