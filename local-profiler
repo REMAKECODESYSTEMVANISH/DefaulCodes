@@ -1,0 +1,20 @@
+local profiler = {}
+
+function profiler.start()
+    profiler.startTime = os.clock()
+end
+
+function profiler.stop()
+    local elapsedTime = os.clock() - profiler.startTime
+    print("Tiempo transcurrido: " .. elapsedTime .. " segundos")
+end
+
+-- Uso del microperfilador
+profiler.start()
+
+-- Código a medir
+for i = 1, 1000000 do
+    -- Código de ejemplo
+end
+
+profiler.stop()
