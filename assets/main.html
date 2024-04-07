@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta name="color-scheme" content="dark light">  
+    <link rel="stylesheet" type="text/css" href="file:///assets/main.css">
+    <script src="file:///assets/android.js"></script>
+    <script src="file:///assets/main.js"></script>
+</head>
+<body onload="pageLoaded()">
+<h3>User Info</h3>  
+<table>
+  <tr><td>ID</td><td id="uid"></td></tr>
+  <tr><td>Email</td><td id="email"></td></tr>
+  <tr><td>Name</td><td id="uname"></td></tr>
+</table>    
+<p>  
+<button disabled id="signIn" onclick="user.signIn()">Sign In</button>
+<button disabled id="signOut" onclick="user.signOut();update()">Sign Out</button>
+
+<p>
+<h2>How to integrate this example with your own Firebase account</h2>
+<ul>
+    <li>Change the package name of the app to avoid name conflicts.</li>
+    <li>Follow <a href="abhelp:/how_to/add_firebase">these instructions</a>
+        to create and integrate your own Firebase project.
+    </li>
+</ul>
+
+</body>
+</html>
