@@ -18,5 +18,5 @@ td {
 
 tr td:last-child {
   font-weight: bold;
-  color: green;
+  color: blue;
 }  

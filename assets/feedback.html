@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta name="color-scheme" content="dark light" charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="file:///assets/main.css">
+    <script src="file:///assets/android.js"></script>
+    <script src="file:///assets/feedback.js"></script>
+</head>  
+<body>
+<div class="centerInScreen">
+<FORM action="feedback:form" target="hidden" id="form" onsubmit="disableButton()">
+  First Name: <INPUT type="text" name="firstName">
+  <p>
+  Last Name: <INPUT type="text" name="lastName">
+  <p>  
+  <textarea name="text" style="width:100%"></textarea>  
+  <p>  
+  <INPUT type="submit" value="Submit" id="submit">
+</FORM>
+<!--
+This iframe accepts the result 
+of the form submission.
+It is hidden because the result is 
+not needed.
+-->
+<iframe name="hidden" style="display:none" onload="thanks(this)"></iframe>  
+</div>
+</body>
+</html>
+

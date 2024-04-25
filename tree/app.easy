@@ -308,6 +308,25 @@
             "_type": "App.Settings.ReleaseBuild"
         }
     },
+    "adMob": {
+        "_id_": 687,
+        "_type": "AdMob",
+        "appId": {
+            "_id_": 688,
+            "_type": "String",
+            "value_": "test"
+        },
+        "testDevices": {
+            "_id_": 690,
+            "_type": "List",
+            "list_": []
+        },
+        "adUnits": {
+            "_id_": 692,
+            "_type": "List",
+            "list_": []
+        }
+    },
     "packaging": {
         "_id_": 17,
         "_type": "App.Packaging",
@@ -351,7 +370,7 @@
         "versionName": {
             "_id_": 26,
             "_type": "String",
-            "value_": "v1"
+            "value_": "Classic 1.0"
         },
         "versionCode": {
             "_id_": 27,
@@ -365,12 +384,65 @@
         },
         "permissions": {
             "_id_": 29,
-            "_type": "App.Permissions"
+            "_type": "App.Permissions",
+            "INTERNET": {
+                "_id_": 586,
+                "_type": "Boolean",
+                "value_": true
+            },
+            "ACCESS_WIFI_STATE": {
+                "_id_": 585,
+                "_type": "Boolean",
+                "value_": true
+            }
         },
         "packageName": {
             "_id_": 30,
             "_type": "String",
             "value_": "com.aaappps.google.signin"
+        }
+    },
+    "firebase": {
+        "_id_": 670,
+        "_type": "Firebase.Settings",
+        "authentication": {
+            "_id_": 672,
+            "_type": "Firebase.Settings.Authentication",
+            "debug": {
+                "_id_": 676,
+                "_type": "Debug",
+                "tag": {
+                    "_id_": 678,
+                    "_type": "String",
+                    "value_": "1.0"
+                }
+            },
+            "google": {
+                "_id_": 674,
+                "_type": "Boolean",
+                "value_": true
+            },
+            "comment": {
+                "_id_": 680,
+                "_type": "Comment",
+                "list_": [
+                    {
+                        "_id_": 682,
+                        "_type": "AdMob.TestDevice",
+                        "name": {
+                            "_id_": 685,
+                            "_type": "String",
+                            "value_": "My phone"
+                        },
+                        "deviceId": {
+                            "_id_": 684,
+                            "_type": "String",
+                            "value_": ""
+                        }
+                    }
+                ],
+                "text_": ""
+            }
         }
     },
     "_abVer": 225
